@@ -1,0 +1,99 @@
+;;
+;; Domain:     betterlivings.edu.np.
+;; Exported:   2024-10-12 16:20:21
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+betterlivings.edu.np	3600	IN	SOA	langston.ns.cloudflare.com. dns.cloudflare.com. 2048041662 10000 2400 604800 3600
+
+;; NS Records
+betterlivings.edu.np.	86400	IN	NS	langston.ns.cloudflare.com.
+betterlivings.edu.np.	86400	IN	NS	lola.ns.cloudflare.com.
+
+;; A Records
+betterlivings.edu.np.	1	IN	A	185.199.108.153
+betterlivings.edu.np.	1	IN	A	185.199.109.153
+betterlivings.edu.np.	1	IN	A	185.199.110.153
+betterlivings.edu.np.	1	IN	A	185.199.111.153
+
+;; AAAA Records
+betterlivings.edu.np.	1	IN	AAAA	2606:50c0:8000::153
+betterlivings.edu.np.	1	IN	AAAA	2606:50c0:8001::153
+betterlivings.edu.np.	1	IN	AAAA	2606:50c0:8002::153
+betterlivings.edu.np.	1	IN	AAAA	2606:50c0:8003::153
+
+;; CNAME Records
+_acme-challenge.betterlivings.edu.np.	1	IN	CNAME	fb235762-4961-48c6-ba34-112e6f76793a.acmedns.infinityfree.net.
+autodiscover.np.betterlivings.edu.np.	3600	IN	CNAME	autodiscover.outlook.com.
+dkim02._domainkey.betterlivings.edu.np.	1	IN	CNAME	dkim02._domainkey.simplelogin.co.
+dkim03._domainkey.betterlivings.edu.np.	1	IN	CNAME	dkim03._domainkey.simplelogin.co.
+dkim._domainkey.betterlivings.edu.np.	1	IN	CNAME	dkim._domainkey.simplelogin.co.
+www.betterlivings.edu.np.	1	IN	CNAME	betterlivings.edu.np.
+
+;; MX Records
+betterlivings.edu.np.	1	IN	MX	23 route3.mx.cloudflare.net.
+betterlivings.edu.np.	1	IN	MX	79 route2.mx.cloudflare.net.
+betterlivings.edu.np.	1	IN	MX	21 route1.mx.cloudflare.net.
+bio.betterlivings.edu.np.	1	IN	MX	10 mx.mailtie.com.
+cs.betterlivings.edu.np.	1	IN	MX	23 route3.mx.cloudflare.net.
+cs.betterlivings.edu.np.	1	IN	MX	79 route2.mx.cloudflare.net.
+cs.betterlivings.edu.np.	1	IN	MX	21 route1.mx.cloudflare.net.
+email.betterlivings.edu.np.	1	IN	MX	21 route1.mx.cloudflare.net.
+email.betterlivings.edu.np.	1	IN	MX	79 route2.mx.cloudflare.net.
+email.betterlivings.edu.np.	1	IN	MX	23 route3.mx.cloudflare.net.
+mail.betterlivings.edu.np.	1	IN	MX	21 route1.mx.cloudflare.net.
+mail.betterlivings.edu.np.	1	IN	MX	79 route2.mx.cloudflare.net.
+mail.betterlivings.edu.np.	1	IN	MX	23 route3.mx.cloudflare.net.
+np.betterlivings.edu.np.	3600	IN	MX	0 np-betterlivings-edu-np.mail.protection.outlook.com.
+sci.betterlivings.edu.np.	1	IN	MX	21 route1.mx.cloudflare.net.
+sci.betterlivings.edu.np.	1	IN	MX	79 route2.mx.cloudflare.net.
+sci.betterlivings.edu.np.	1	IN	MX	23 route3.mx.cloudflare.net.
+
+;; NS Records
+betterlivings.edu.np.	1	IN	NS	ns2.infinityfree.com. ; name server for free host2
+betterlivings.edu.np.	1	IN	NS	ns1.infinityfree.com. ; name server for free host
+cs.betterlivings.edu.np.	1	IN	NS	ns2.infinityfree.com.
+cs.betterlivings.edu.np.	1	IN	NS	ns1.infinityfree.com.
+
+;; SRV Records
+_sipfederationtls._tcp.cs.betterlivings.edu.np.	3600	IN	SRV	100 1 5061 sipfed.online.lync.com.
+_sip._tls.cs.betterlivings.edu.np.	3600	IN	SRV	100 1 443 sipdir.online.lync.com.
+
+;; TXT Records
+betterlivings.edu.np.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+betterlivings.edu.np.	1	IN	TXT	"google-site-verification=q-TTppoFxVeT1A5DxtUBqHh9CNPLaknse8ROLHIv8DI"
+betterlivings.edu.np.	1	IN	TXT	"sl-verification=ktimunqfatyegsfdstocpboxrvwpqh" ; simple login io mail service
+betterlivings.edu.np.	1	IN	TXT	"google-site-verification=q-TTppoFxVeT1A5DxtUBqHh9CNPLaknse8ROLHIv8DI"
+bio.betterlivings.edu.np.	1	IN	TXT	"mailtie=robot12robo@gmail.com,ved1@hi2.in"
+bio.betterlivings.edu.np.	1	IN	TXT	"mailtie=support:robot12robo@gmail.com"
+cs.betterlivings.edu.np.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+_dmarc.betterlivings.edu.np.	1	IN	TXT	"v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s"
+_dmarc.betterlivings.edu.np.	1	IN	TXT	"v=DMARC1; p=none; rua=mailto:betterlivingschool@outlook.com"
+_dmarc.betterlivings.edu.np.	1	IN	TXT	"v=DMARC1; p=none; rua=mailto:betterlivingschool@outlook.com"
+_dmarc.betterlivings.edu.np.	1	IN	TXT	"v=DMARC1;  p=none; rua=mailto:ae23ab8848284a0e9c00eff901ccbd9f@dmarc-reports.cloudflare.net"
+email.betterlivings.edu.np.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+_github-pages-challenge-angel-sharmas.betterlivings.edu.np.	1	IN	TXT	"6f73c5d95cbde30171d72bf106ae0a"
+mail.betterlivings.edu.np.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+np.betterlivings.edu.np.	3600	IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+np.betterlivings.edu.np.	1	IN	TXT	"MS=ms78334880"
+sci.betterlivings.edu.np.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
